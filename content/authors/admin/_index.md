@@ -83,7 +83,7 @@ education:
       # - lorem ipsum dolor sit amet, consectetur adipiscing elit
       # - lorem ipsum dolor sit amet, consectetur adipiscing elit
       # - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: Master in Economics: Empirical Applications and Policies
+  - area: Master in Economics - Empirical Applications and Policies
     institution: Universidad del País Vasco
     date_start: 2019-09-01
     date_end: 2020-08-31
