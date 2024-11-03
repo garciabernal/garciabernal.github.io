@@ -49,7 +49,7 @@ profiles:
 interests:
   - Macroeconomics
   - Inequality
-  - Fiscal policy
+  - Fiscal and monetary policy
 
 education:
   # - area: PhD Artificial Intelligence
