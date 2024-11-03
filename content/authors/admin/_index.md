@@ -171,7 +171,7 @@ languages:
   - name: French (C1)
     percent: 85
   - name: Russian (B2)
-    percent: 70
+    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
