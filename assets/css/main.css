@@ -2843,7 +2843,9 @@ input, select, textarea {
 			}
 
 			#footer .copyright ul.menu > li.menu-icons {
-				line-height: 0;
+				display: inline-flex;
+				align-items: center;
+				gap: 0.0em;
 			}
 
 			#footer .copyright ul.menu {
