@@ -47,17 +47,33 @@
 									<h2><a href="#">Julia codes</a></h2>
 								</header>
 
-								<p>These are some Julia packages I’ve created for my work, shared here in case they’re useful. Suggestions are welcome!</p>
+								<p>These are some Julia packages I've created for my work, shared here in case they're useful for you too. Suggestions are welcome!</p>
 
 								<!-- <h3><a href="#">Data analysis</a></h3> -->
 								<ul>
-									<li><b><a href="https://github.com/tavojgb/DataReader.jl">DataReader.jl</a></b>: A package for reading and importing datasets into Julia. The following packages are built on top of it:
+									<li>Packages for reading and importing datasets into Julia:
 										<ul style="list-style-type: circle;">
-											<li><b><a href="https://github.com/tavojgb/ReadEFF.jl">ReadEFF.jl</a></b>: Read the Encuesta Financiera de las Familias (EFF) from the Banco de España.
+											<li>
+												<a href="https://github.com/tavojgb/DataReader.jl">DataReader.jl</a> is the core package, providing the general structure for reading CSV data into Julia. The packages that follow are built on top of it.
 											</li>
-											<li><b><a href="https://github.com/tavojgb/ReadNLSY.jl">ReadNLSY.jl</a></b>: Read the National Longitudinal Surveys of Youth (NLSY) from the BLS.
+											<li>
+												<a href="https://github.com/tavojgb/ReadEFF.jl">ReadEFF.jl</a>: Read the Encuesta Financiera de las Familias (EFF) from the Banco de España.
 											</li>
-											<li><b><a href="https://github.com/tavojgb/ReadSCF.jl">ReadSCF.jl</a></b>: Read the Survey of Consumer Finances (SCF) from the Federal Reserve.
+											<li>
+												<a href="https://github.com/tavojgb/ReadNLSY.jl">ReadNLSY.jl</a>: Read the National Longitudinal Surveys of Youth (NLSY) from the BLS.
+											</li>
+											<li>
+												<a href="https://github.com/tavojgb/ReadSCF.jl">ReadSCF.jl</a>: Read the Survey of Consumer Finances (SCF) from the Federal Reserve.
+											</li>
+										</ul>
+									</li>
+									<li>Packages for economic data analysis:
+										<ul style="list-style-type: circle;">
+											<li>
+												<a href="https://github.com/tavojgb/EconVariables.jl">EconVariables.jl</a> provides tools to handle variables with economic metadata. It simplifies tasks such as adjusting for inflation and enforces consistency by preventing invalid operations — for example, adding nominal values expressed in different base years.
+											</li>
+											<li>
+												<a href="https://github.com/tavojgb/EconFrames.jl">EconFrames.jl</a> wraps DataFrames with economic metadata. It is useful, for example, to manage data frames where the unit of observation may change (e.g., individuals vs. households) or to keep track of weights and variable definitions throughout the analysis. Just like EconVariables.jl, it ensures that variable and dataframe transformations are consistent with their economic metadata.
 											</li>
 										</ul>
 									</li>
