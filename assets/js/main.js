@@ -60,6 +60,7 @@
 			$(
 				'<div id="navPanel">' +
 					'<nav>' +
+						'<button id="theme-toggle-mobile" class="theme-toggle theme-toggle--mobile" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="icon solid fa-moon" aria-hidden="true"></span></button>' +
 						$('#nav').navList() +
 					'</nav>' +
 				'</div>'

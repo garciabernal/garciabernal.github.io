@@ -3481,7 +3481,8 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10002;
-				background: var(--colorsuperficie);
+				background: var(--colorpie);
+				color: var(--colorpie-texto);
 				box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
 				font-size: 1em;
 			}
@@ -3504,10 +3505,10 @@ input, select, textarea {
 					display: block;
 					text-decoration: none;
 					padding: 0.5em;
-					color: var(--colordos);
+					color: var(--colorpie-texto);
 					font-weight: 600;
 					border: 0;
-					border-top: dotted 1px var(--colorborde);
+					border-top: dotted 1px rgba(255, 255, 255, 0.18);
 					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3516,8 +3517,8 @@ input, select, textarea {
 
 					#navPanel .link:hover,
 					#navPanel .link:focus-visible {
-						background-color: rgba(201, 108, 9, 0.12);
-						color: var(--colordos);
+						background-color: rgba(255, 255, 255, 0.08);
+						color: var(--colorpie-texto);
 						outline: 0;
 					}
 
@@ -3526,8 +3527,29 @@ input, select, textarea {
 					}
 
 					#navPanel .link.depth-0 {
-						color: var(--colordos);
+						color: var(--colorpie-texto);
 						font-weight: 600;
+					}
+
+					#navPanel .theme-toggle--mobile {
+						display: block;
+						position: relative;
+						z-index: 1;
+						width: calc(100% - 1em);
+						margin: 0.25em 0.5em 0.5em 0.5em;
+						padding: 0.65em 0;
+						border-radius: 0.45em;
+						background: var(--theme-toggle-bg);
+						color: var(--theme-toggle-text);
+						border: solid 1px var(--theme-toggle-border);
+						text-align: center;
+					}
+
+					#navPanel .theme-toggle--mobile:hover,
+					#navPanel .theme-toggle--mobile:focus-visible {
+						background: var(--theme-toggle-hover-bg);
+						border-color: var(--colorcuatro);
+						outline: 0;
 					}
 
 				#navPanel .indent-1 {
@@ -3687,6 +3709,26 @@ input, select, textarea {
 			#footer {
 				padding-left: 1em;
 				padding-right: 1em;
+				padding-top: 0.65em;
+				padding-bottom: 0.65em;
+			}
+
+			#footer .contact p {
+				margin: 0 0 1.25em 0;
+			}
+
+			#footer ul.icons.footer-icons {
+				font-size: 0.8em;
+			}
+
+			#footer ul.icons.footer-icons li a {
+				width: 1.7em;
+				height: 1.7em;
+				line-height: 1.7em;
+			}
+
+			#footer .copyright {
+				font-size: 0.72em;
 			}
 
 		/* Carousel */

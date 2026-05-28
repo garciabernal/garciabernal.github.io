@@ -27,22 +27,26 @@
 	}
 
 	function syncThemeToggle() {
-		var toggle = document.getElementById("theme-toggle");
+		var toggles = document.querySelectorAll(".theme-toggle");
 
-		if (!toggle) {
+		if (!toggles.length) {
 			return;
 		}
 
-		var icon = toggle.querySelector(".icon");
 		var isDark = currentTheme === "dark";
 		var label = isDark ? "Switch to light mode" : "Switch to dark mode";
 
-		toggle.setAttribute("aria-pressed", isDark ? "true" : "false");
-		toggle.setAttribute("aria-label", label);
-		toggle.setAttribute("title", label);
+		for (var i = 0; i < toggles.length; i++) {
+			var toggle = toggles[i];
+			var icon = toggle.querySelector(".icon");
 
-		if (icon) {
-			icon.className = isDark ? "icon solid fa-sun" : "icon solid fa-moon";
+			toggle.setAttribute("aria-pressed", isDark ? "true" : "false");
+			toggle.setAttribute("aria-label", label);
+			toggle.setAttribute("title", label);
+
+			if (icon) {
+				icon.className = isDark ? "icon solid fa-sun" : "icon solid fa-moon";
+			}
 		}
 	}
 
@@ -70,7 +74,7 @@
 
 	function handleClick(event) {
 		var target = event.target;
-		var toggle = target && target.closest ? target.closest("#theme-toggle") : null;
+		var toggle = target && target.closest ? target.closest(".theme-toggle") : null;
 
 		if (!toggle) {
 			return;
