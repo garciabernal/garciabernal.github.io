@@ -73,6 +73,9 @@
 		}
 		nav.innerHTML = html;
 		applyCurrentClass(nav);
+		if (typeof window.syncThemeToggle === "function") {
+			window.syncThemeToggle();
+		}
 		loadMainJs();
 	}
 
@@ -102,9 +105,10 @@
 						'<li class="divider">|</li>' +
 						'<li><a href="index.html">Home</a></li>' +
 						'<li><a href="research.html">Research</a></li>' +
-						'<li><a href="teaching.html">Teaching</a></li>' +
+						'<li><a href="julia.html">Julia</a></li>' +
 						'<li><a href="cv.html">CV</a></li>' +
-						'<li><a href="about.html">About me</a></li>' +
+						'<li><a href="about.html">About</a></li>' +
+						'<li class="nav-theme"><button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="icon solid fa-moon" aria-hidden="true"></span></button></li>' +
 					'</ul>'
 				);
 			});
